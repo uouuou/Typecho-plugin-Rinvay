@@ -43,24 +43,23 @@ public static function button(){
 						zeze(rs);
 					})
 				}
-
-            console.log('OωO ok!');
-            window['LocalConst'] = {
-                BIAOQING_PAOPAO_PATH: '<?php echo gethosturl();?>/usr/themes/Rinvay/images/biaoqing/paopao/',
-                BIAOQING_ARU_PATH: '<?php echo gethosturl();?>/usr/themes/Rinvay/images/biaoqing/aru/',
-            };
-            var owo = new OwO({     
-                logo: 'OωO',
-                container: document.getElementsByClassName('OwO')[0],
-                target: document.getElementsByName('text')[0],
-                api: '<?php echo gethosturl();?>/usr/themes/Rinvay/js/OwO.json',
-                position: 'down',
-                width: '100%;',
-                maxHeight: '250px'
-            })
-
-
-					        
+		$('#wmd-button-bar').append('<div class="OwO"></div>');
+				if($('#wmd-button-row').length !== 0){
+                    console.log('OωO ok!');
+                    window['LocalConst'] = {
+                        BIAOQING_PAOPAO_PATH: '<?php echo gethosturl();?>/usr/themes/Rinvay/images/biaoqing/paopao/',
+                        BIAOQING_ARU_PATH: '<?php echo gethosturl();?>/usr/themes/Rinvay/images/biaoqing/aru/',
+                    };
+                    var owo = new OwO({     
+                        logo: 'OωO',
+                        container: document.getElementsByClassName('OwO')[0],
+                        target: document.getElementsByName('text')[0],
+                        api: '<?php echo gethosturl();?>/usr/themes/Rinvay/js/OwO.json',
+                        position: 'down',
+                        width: '100%;',
+                        maxHeight: '250px'
+                    })
+				}
 
 				function zeze(tag) {
 					var myField;
